@@ -94,6 +94,13 @@ Karpathy 视频大致 2h25min。下面是粗略对照(具体时间戳用户看�
 - 跑测试:`python -m pytest`(需要装 PyTorch)
 - 跑 notebook:`jupyter notebook demo.ipynb`(`demo.ipynb` 还需要 `numpy`、`matplotlib`、`scikit-learn`)
 
+## Git 设置
+
+- 工作 branch:**`learning`**(用户的学习笔记、CLAUDE.md、NOTES.md 都提交在这条 branch)
+- `origin` → `karpathy/micrograd`(Karpathy 官方,**只读**,可以 `git fetch origin` 拿更新,但**不要 push、不要开 PR**)
+- `mine` → `itstilldepends/micrograd`(用户的 fork,日常 push 到这里;`learning` branch 已设 upstream 跟踪 `mine/learning`)
+- GitHub push 后会提示 "Create a pull request" — **忽略**,这只是默认 UI 噪音,本项目不需要 PR。
+
 ## 我(Claude)在这个 repo 里不要做的事
 
 - 不要"优化"或"重构" Karpathy 的代码 — 它是教学版,简洁是目的本身。
